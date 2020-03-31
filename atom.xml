@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Pluto-blog.github.io</id>
     <title>优梦博客</title>
-    <updated>2020-03-31T08:20:25.279Z</updated>
+    <updated>2020-03-31T17:19:43.911Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Pluto-blog.github.io"/>
     <link rel="self" href="https://Pluto-blog.github.io/atom.xml"/>
@@ -10,6 +10,45 @@
     <logo>https://Pluto-blog.github.io/images/avatar.png</logo>
     <icon>https://Pluto-blog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 优梦博客</rights>
+    <entry>
+        <title type="html"><![CDATA[我的装机软件-持续更新中]]></title>
+        <id>https://Pluto-blog.github.io/post/EXE/</id>
+        <link href="https://Pluto-blog.github.io/post/EXE/">
+        </link>
+        <updated>2020-03-31T17:01:01.000Z</updated>
+        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1585674885114.jpg" alt="" loading="lazy"></figure>
+]]></summary>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1585674885114.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
+<p>写在前面：本文所有“其他软件”安装包可到本链接下载<a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/tag/2020-04-01">https://github.com/Pluto-blog/Pluto-blog.github.io/releases/tag/2020-04-01</a></p>
+<ol>
+<li>
+<p>官方软件</p>
+<ol>
+<li><a href="https://www.google.cn.Chrome">Chrome</a></li>
+<li><a href="https://www.huorong.cn/">火绒安全</a></li>
+<li>DrakReader（本插件请自行搜索）</li>
+<li><a href="https://weixin.qq.com/">微信</a></li>
+<li><a href="https://office.qq.com">TIM</a></li>
+<li><a href="https://code.visualstudio.com/">VS Code</a></li>
+<li><a href="https://obsproject.com/">OBS</a></li>
+<li><a href="https://mail.163.com/dashi/">网易邮箱大师</a></li>
+<li><a href="https://www.u.tools/">uTools</a></li>
+</ol>
+</li>
+<li>
+<p>其他软件</p>
+<ol>
+<li><a href="http://rufus.ie/">Rufus</a></li>
+<li><a href="http://www.pc6.com/softview/SoftView_376040.html">卡硬工具箱</a></li>
+<li><a href="https://www.youdream.top/files-share/DigitalLicense.exe">Windows数字激活</a></li>
+<li><a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/download/2020-04-01/PotPlayerSetup64.exe">PotPlayer</a></li>
+<li><a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/download/2020-04-01/SendAnywhereSetup.exe">SendAnyWay（内网跨平台传输，安卓版、iOS版可在各大商店下载）</a></li>
+</ol>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【日记】2020-03-31]]></title>
         <id>https://Pluto-blog.github.io/post/RJ-20200331/</id>

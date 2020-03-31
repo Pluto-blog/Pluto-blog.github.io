@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="UTF-8"/>
+    <meta charset="UTF-8"/>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="静态个人博客">
 <meta name="description" content="湖水是你的眼神，梦想满天星辰">
 <meta name="theme-color" content="#000">
-<title>优梦博客</title>
+<title>我的装机软件-持续更新中 | 优梦博客</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1585675181481">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -37,6 +37,8 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+    <meta name="description" content="我的装机软件-持续更新中" />
+    <meta name="keywords" content="APP,IT,PC" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -164,10 +166,25 @@ var _hmt = _hmt || [];
     </div>
     <div class="main-continer">
       
-      <div class="section-layout  gemini">
+      <div class="section-layout gemini ">
         <div class="section-layout-wrapper">
-          <div id="sidebarMeta" class="sidebar">
-    
+          
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -225,78 +242,243 @@ var _hmt = _hmt || [];
 
 
 </div>
+          
+        
+      </div>
+    </div>
+  
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-            <div class="section-box tag-line">
-              <div class="box-shadow-wrapper">
-                <div class="bg-color">
-                  <section class="section posts-expand">
-                    <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          日记
-          <small>标签</small>
-        </h2>
-      </div>
-      
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+          <div class="section-box box-shadow-wrapper">
+            <div class="section bg-color post post-page">
+              <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://Pluto-blog.github.io/post/EXE/">
+      我的装机软件-持续更新中
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-04-01</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+      <span class="meta-item">
+        <i class="fa fa-folder-o"></i>
+        <span class="pc-show">分类于</span>
         
+          
+            <a href="https://Pluto-blog.github.io/tag/aKbGKgH3_/">
+              <span>APP</span>
+            </a>、
           
         
           
-        
+            <a href="https://Pluto-blog.github.io/tag/wnlv1t3anb/">
+              <span>IT</span>
+            </a>、
           
         
-      
-        
           
-            <a href="https://Pluto-blog.github.io/post/RJ-20200331/">
-              <div class="motion-warpper">
-                <div class="tag-post-node">
-                  <h1>
-                    03-31
-                    <small>【日记】2020-03-31</small>
-                  </h1>
-                </div>  
-              </div>
+            <a href="https://Pluto-blog.github.io/tag/de8JqhzfGa/">
+              <span>PC</span>
             </a>
           
         
+      </span>
+      <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>104<span class="pc-show">字数</span></span>
+    </span>
+    
+      
       
         
-          
-        
-          
-        
       
-        
-          
-        
+      <span id="/post/EXE/" data-flag-title="我的装机软件-持续更新中" class="meta-item pc-show leancloud_visitors">
+        <span class="post-meta-divider">|</span>
+        <i class="fa fa-eye"></i>
+        <span>浏览量：<span class="leancloud-visitors-count" ></span></span>
+      </span>
+    
+  </div>
+</header>
+              <div class="post-body next-md-body" id="post_body">
+                <figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1585674885114.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
+<p>写在前面：本文所有“其他软件”安装包可到本链接下载<a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/tag/2020-04-01">https://github.com/Pluto-blog/Pluto-blog.github.io/releases/tag/2020-04-01</a></p>
+<ol>
+<li>
+<p>官方软件</p>
+<ol>
+<li><a href="https://www.google.cn.Chrome">Chrome</a></li>
+<li><a href="https://www.huorong.cn/">火绒安全</a></li>
+<li>DrakReader（本插件请自行搜索）</li>
+<li><a href="https://weixin.qq.com/">微信</a></li>
+<li><a href="https://office.qq.com">TIM</a></li>
+<li><a href="https://code.visualstudio.com/">VS Code</a></li>
+<li><a href="https://obsproject.com/">OBS</a></li>
+<li><a href="https://mail.163.com/dashi/">网易邮箱大师</a></li>
+<li><a href="https://www.u.tools/">uTools</a></li>
+</ol>
+</li>
+<li>
+<p>其他软件</p>
+<ol>
+<li><a href="http://rufus.ie/">Rufus</a></li>
+<li><a href="http://www.pc6.com/softview/SoftView_376040.html">卡硬工具箱</a></li>
+<li><a href="https://www.youdream.top/files-share/DigitalLicense.exe">Windows数字激活</a></li>
+<li><a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/download/2020-04-01/PotPlayerSetup64.exe">PotPlayer</a></li>
+<li><a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/download/2020-04-01/SendAnywhereSetup.exe">SendAnyWay（内网跨平台传输，安卓版、iOS版可在各大商店下载）</a></li>
+</ol>
+</li>
+</ol>
+
+              </div>
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      优梦博客
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://Pluto-blog.github.io/post/EXE/" title="我的装机软件-持续更新中">我的装机软件-持续更新中</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://Pluto-blog.github.io/tag/aKbGKgH3_/"># APP</a>
+    
+      <a href="https://Pluto-blog.github.io/tag/wnlv1t3anb/"># IT</a>
+    
+      <a href="https://Pluto-blog.github.io/tag/de8JqhzfGa/"># PC</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
       
-        
-          
-        
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="【日记】2020-03-31" href="https://Pluto-blog.github.io/post/RJ-20200331/">【日记】2020-03-31</a>
+        <a class="nav-mobile-next" title="【日记】2020-03-31" href="https://Pluto-blog.github.io/post/RJ-20200331/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-                  </section>
-                </div>
-              </div>
+              
+  
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+<script>
+new Valine({
+    el: '#vcomments' ,
+    appId: 'SG0og92gzo1HVbmlMiiLNk3a-gzGzoHsz',
+    appKey: 'Hm7bWynaLLwkqGeIwu3l2mdQ',
+    notify: 'true' === 'true', 
+    avatar:'', 
+    placeholder: '来都来了，评个论再走吧~',
+    pageSize: '',
+    lang: 'zh-cn',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'true',
+});
+</script>
+
+            </div>
           </div>
         </div>
       </div>
@@ -460,6 +642,36 @@ var _hmt = _hmt || [];
   // 代码高亮
   hljs.initHighlightingOnLoad();
 
+</script>
+      <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick= () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function(e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function() {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
 </script>
     </div>
   </body>
