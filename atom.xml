@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Pluto-blog.github.io</id>
     <title>优梦博客</title>
-    <updated>2020-03-31T08:05:57.113Z</updated>
+    <updated>2020-03-31T08:06:51.491Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Pluto-blog.github.io"/>
     <link rel="self" href="https://Pluto-blog.github.io/atom.xml"/>
@@ -16,8 +16,11 @@
         <link href="https://Pluto-blog.github.io/post/RJ-20200331/">
         </link>
         <updated>2020-03-31T08:02:50.000Z</updated>
-        <content type="html"><![CDATA[<p>作业是真他妈多，能不能干快开学，别在这折腾学生了！！！<br>
-<img src="https://Pluto-blog.github.io/post-images/1585641823725.jpg" alt="" loading="lazy"></p>
+        <summary type="html"><![CDATA[<p>作业是真他妈多，能不能干快开学，别在这折腾学生了！！！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>作业是真他妈多，能不能干快开学，别在这折腾学生了！！！</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1585642005071.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
