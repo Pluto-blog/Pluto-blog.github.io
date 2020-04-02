@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Pluto-blog.github.io</id>
     <title>优梦博客</title>
-    <updated>2020-04-02T01:46:47.610Z</updated>
+    <updated>2020-04-02T18:50:36.944Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Pluto-blog.github.io"/>
     <link rel="self" href="https://Pluto-blog.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://Pluto-blog.github.io/images/avatar.png</logo>
     <icon>https://Pluto-blog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 优梦博客</rights>
+    <entry>
+        <title type="html"><![CDATA[【随笔】2020-04-03凌晨]]></title>
+        <id>https://Pluto-blog.github.io/post/SB-20200403/</id>
+        <link href="https://Pluto-blog.github.io/post/SB-20200403/">
+        </link>
+        <updated>2020-04-02T18:47:12.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<p><img src="https://Pluto-blog.github.io/post-images/1585853337341.jpg" alt="" loading="lazy"><br>
+挺好玩的一件事，为学习熬夜的时候不怎么觉得困，一放下笔马上就困了🤣🤣🤣</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[我的装机软件-持续更新中]]></title>
         <id>https://Pluto-blog.github.io/post/EXE/</id>
