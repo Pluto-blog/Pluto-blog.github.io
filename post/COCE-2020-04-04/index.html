@@ -8,7 +8,7 @@
 <meta name="description" content="湖水是你的眼神，梦想满天星辰">
 <meta name="theme-color" content="#000">
 <title>建议把其他娱乐一并禁了 | 优梦博客</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1585962722644">
+<link rel="shortcut icon" href="/favicon.ico?v=1585963195097">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -184,7 +184,8 @@ var _hmt = _hmt || [];
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -242,6 +243,193 @@ var _hmt = _hmt || [];
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number no_compress" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E7%A6%81%E4%BA%86%E6%B8%B8%E6%88%8F%E6%83%B3%E6%83%B3%E4%B9%9F%E5%AF%B9%E8%8B%B1%E9%9B%84%E5%80%BC%E5%BE%97%E5%B0%8A%E9%87%8D">禁了游戏，想想也对，英雄值得尊重。</a></li>
+<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%BE%88%E5%A4%9A%E4%BA%BA%E5%AF%B9%E5%81%9C%E6%B8%B8%E6%9C%89%E6%84%8F%E8%A7%81">为什么很多人对停游有意见？</a>
+<ul>
+<li><a href="#%E5%8D%95%E5%8D%95%E7%A6%81%E7%BD%91%E6%B8%B8%E4%B8%8D%E5%B0%B1%E6%98%AF%E5%9C%A8%E6%BF%80%E5%8C%96%E7%9F%9B%E7%9B%BE%E5%90%97"><strong>单单禁网游，不就是在激化矛盾吗？</strong></a></li>
+</ul>
+</li>
+<li><a href="#%E6%88%91%E4%BC%9A%E8%8A%B1%E4%B8%89%E5%88%86%E9%92%9F%E5%93%80%E6%82%BC%E6%88%91%E4%BC%9A%E8%8A%B1%E4%B8%80%E8%BE%88%E5%AD%90%E9%93%AD%E8%AE%B0%E8%BF%99%E4%BA%9B%E4%B8%BA%E6%88%91%E4%BB%AC%E5%B9%B8%E7%A6%8F%E7%A8%B3%E5%AE%9A%E7%94%9F%E6%B4%BB%E5%86%B2%E9%94%8B%E7%9A%84%E8%8B%B1%E9%9B%84"><em><strong>我会花三分钟哀悼，我会花一辈子铭记这些为我们幸福稳定生活冲锋的英雄，</strong></em></a></li>
+<li><a href="#%E4%BD%86%E6%98%AF%E6%88%91%E4%B8%8D%E4%BC%9A%E8%B5%9E%E5%90%8C%E8%BF%99%E7%A7%8D%E8%99%9A%E5%81%87%E7%9A%84%E8%87%AA%E6%88%91%E6%84%9F%E5%8A%A8%E5%92%8C%E5%BD%A2%E5%BC%8F%E4%B8%BB%E4%B9%89%E8%99%9A%E4%BC%AA"><em><strong>但是我不会赞同这种虚假的自我感动和形式主义，虚伪。</strong></em></a></li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+      lList.push(elem);
+    }
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+
+(function() {
+  // 处理不是从#一级标题开始目录
+  if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+    let con = tocContent.children[0].children[0];
+    tocContent.innerHTML = con.innerHTML;
+  }
+  addTocNumber(tocContent, '');
+})();
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop + 10;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+            </div>
           
         
       </div>
@@ -397,22 +585,22 @@ var _hmt = _hmt || [];
 </header>
               <div class="post-body next-md-body" id="post_body">
                 <!-- more -->
-<p><img src="https://Pluto-blog.github.io/post-images/1585961999006.jpg" alt="" loading="lazy"><br>
-##禁了游戏，想想也对，英雄值得尊重。</p>
+<figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1585961999006.jpg" alt="" loading="lazy"></figure>
+<h1 id="禁了游戏想想也对英雄值得尊重">禁了游戏，想想也对，英雄值得尊重。</h1>
 <p>不过能不能把电影 电视剧也给停了？？</p>
 <p>这次游戏直接给了一刀切的处理方法，直接被妖魔化，实属不应该。</p>
-<p>##为什么很多人对停游有意见？</p>
+<h1 id="为什么很多人对停游有意见">为什么很多人对停游有意见？</h1>
 <p>很多人有意见的不是游戏停服！</p>
 <p>而是为什么，只有游戏停服？</p>
 <p>其他软件呢？</p>
 <p>如果，禁娱，理应将所有软件一视同仁。</p>
-<p><strong>单单禁网游，不就是在激化矛盾吗？</strong></p>
+<h2 id="单单禁网游不就是在激化矛盾吗"><strong>单单禁网游，不就是在激化矛盾吗？</strong></h2>
 <p><strong>中国社会对网络游戏如同洪水猛兽的观点什么时候才能改变？？？</strong></p>
 <p>道德是用来约束自，己而不是强迫他人的，英雄值得尊重，值得追忆。</p>
 <p>但这并不意味着，可以以此为由，逼迫任何人去放弃自己的娱乐，</p>
 <p>如果必须这样，应该把其他娱乐一起关闭！</p>
-<p><em><strong>我会花三分钟哀悼，我会花一辈子铭记这些为我们幸福稳定生活冲锋的英雄，</strong></em></p>
-<p><em><strong>但是我不会赞同这种虚假的自我感动和形式主义，虚伪。</strong></em></p>
+<h1 id="我会花三分钟哀悼我会花一辈子铭记这些为我们幸福稳定生活冲锋的英雄"><em><strong>我会花三分钟哀悼，我会花一辈子铭记这些为我们幸福稳定生活冲锋的英雄，</strong></em></h1>
+<h1 id="但是我不会赞同这种虚假的自我感动和形式主义虚伪"><em><strong>但是我不会赞同这种虚假的自我感动和形式主义，虚伪。</strong></em></h1>
 <p>Pluto.<br>
 于2020-04-04早间</p>
 
