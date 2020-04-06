@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Pluto-blog.github.io</id>
     <title>优梦博客</title>
-    <updated>2020-04-04T14:26:49.947Z</updated>
+    <updated>2020-04-06T03:26:58.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Pluto-blog.github.io"/>
     <link rel="self" href="https://Pluto-blog.github.io/atom.xml"/>
@@ -10,21 +10,6 @@
     <logo>https://Pluto-blog.github.io/images/avatar.png</logo>
     <icon>https://Pluto-blog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 优梦博客</rights>
-    <entry>
-        <title type="html"><![CDATA[看个好玩的]]></title>
-        <id>https://Pluto-blog.github.io/post/2020-04-04.2/</id>
-        <link href="https://Pluto-blog.github.io/post/2020-04-04.2/">
-        </link>
-        <updated>2020-04-04T14:21:43.000Z</updated>
-        <summary type="html"><![CDATA[<p>装逼被打脸哈哈哈哈</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>装逼被打脸哈哈哈哈</p>
-<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1586010128925.jpg" alt="" loading="lazy"></figure>
-<figure data-type="image" tabindex="2"><img src="https://Pluto-blog.github.io/post-images/1586010135908.jpg" alt="" loading="lazy"></figure>
-<p>大家一定不要低估国家机关的网络X侦能力，尊重自己的国家……</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[建议把其他娱乐一并禁了]]></title>
         <id>https://Pluto-blog.github.io/post/COCE-2020-04-04/</id>
