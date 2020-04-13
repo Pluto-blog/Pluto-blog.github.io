@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Pluto-blog.github.io</id>
     <title>优梦博客</title>
-    <updated>2020-04-13T12:26:42.418Z</updated>
+    <updated>2020-04-13T15:05:03.464Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Pluto-blog.github.io"/>
     <link rel="self" href="https://Pluto-blog.github.io/atom.xml"/>
@@ -19,34 +19,6 @@
         <summary type="html"><![CDATA[<p>我原以为，早已习惯孤单一人这句话是假的，现在才发现，这句话很真实。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>我原以为，早已习惯孤单一人这句话是假的，现在才发现，这句话很真实。</p>
-<!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[建议把其他娱乐一并禁了]]></title>
-        <id>https://Pluto-blog.github.io/post/COCE-2020-04-04/</id>
-        <link href="https://Pluto-blog.github.io/post/COCE-2020-04-04/">
-        </link>
-        <updated>2020-04-04T00:56:37.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1585961999006.jpg" alt="" loading="lazy"></figure>
-<h1 id="禁了游戏想想也对英雄值得尊重">禁了游戏，想想也对，英雄值得尊重。</h1>
-<p>不过能不能把电影 电视剧也给停了？？</p>
-<p>这次游戏直接给了一刀切的处理方法，直接被妖魔化，实属不应该。</p>
-<h1 id="为什么很多人对停游有意见">为什么很多人对停游有意见？</h1>
-<p>很多人有意见的不是游戏停服！</p>
-<p>而是为什么，只有游戏停服？</p>
-<p>其他软件呢？</p>
-<p>如果，禁娱，理应将所有软件一视同仁。</p>
-<h2 id="单单禁网游不就是在激化矛盾吗"><strong>单单禁网游，不就是在激化矛盾吗？</strong></h2>
-<p><strong>中国社会对网络游戏如同洪水猛兽的观点什么时候才能改变？？？</strong></p>
-<p>道德是用来约束自，己而不是强迫他人的，英雄值得尊重，值得追忆。</p>
-<p>但这并不意味着，可以以此为由，逼迫任何人去放弃自己的娱乐，</p>
-<p>如果必须这样，应该把其他娱乐一起关闭！</p>
-<h1 id="我会花三分钟哀悼我会花一辈子铭记这些为我们幸福稳定生活冲锋的英雄"><em><strong>我会花三分钟哀悼，我会花一辈子铭记这些为我们幸福稳定生活冲锋的英雄，</strong></em></h1>
-<h1 id="但是我不会赞同这种虚假的自我感动和形式主义虚伪"><em><strong>但是我不会赞同这种虚假的自我感动和形式主义，虚伪。</strong></em></h1>
-<p>Pluto.<br>
-于2020-04-04早间</p>
 ]]></content>
     </entry>
     <entry>
@@ -55,10 +27,6 @@
         <link href="https://Pluto-blog.github.io/post/SB-20200403/">
         </link>
         <updated>2020-04-02T18:47:12.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<p><img src="https://Pluto-blog.github.io/post-images/1585853337341.jpg" alt="" loading="lazy"><br>
-挺好玩的一件事，为学习熬夜的时候不怎么觉得困，一放下笔马上就困了🤣🤣🤣</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[我的装机软件-持续更新中]]></title>
@@ -66,37 +34,6 @@
         <link href="https://Pluto-blog.github.io/post/EXE/">
         </link>
         <updated>2020-03-31T17:01:01.000Z</updated>
-        <content type="html"><![CDATA[<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://Pluto-blog.github.io/post-images/1585674885114.jpg" alt="" loading="lazy"></figure>
-<p>写在前面：本文所有“其他软件”安装包可到本链接下载<br>
-<a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/tag/2020-04-01">点击此处</a></p>
-<ol>
-<li>
-<p>官方软件</p>
-<ol>
-<li><a href="https://www.google.cn.Chrome">Chrome</a></li>
-<li><a href="https://www.huorong.cn/">火绒安全</a></li>
-<li>DrakReader（本插件请自行搜索）</li>
-<li><a href="https://weixin.qq.com/">微信</a></li>
-<li><a href="https://office.qq.com">TIM</a></li>
-<li><a href="https://code.visualstudio.com/">VS Code</a></li>
-<li><a href="https://obsproject.com/">OBS</a></li>
-<li><a href="https://mail.163.com/dashi/">网易邮箱大师</a></li>
-<li><a href="https://www.u.tools/">uTools</a></li>
-</ol>
-</li>
-<li>
-<p>其他软件</p>
-<ol>
-<li><a href="http://rufus.ie/">Rufus</a></li>
-<li><a href="http://www.pc6.com/softview/SoftView_376040.html">卡硬工具箱</a></li>
-<li><a href="https://www.youdream.top/files-share/DigitalLicense.exe">Windows数字激活</a></li>
-<li><a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/download/2020-04-01/PotPlayerSetup64.exe">PotPlayer</a></li>
-<li><a href="https://github.com/Pluto-blog/Pluto-blog.github.io/releases/download/2020-04-01/SendAnywhereSetup.exe">SendAnyWay（内网跨平台传输，安卓版、iOS版可在各大商店下载）</a></li>
-</ol>
-</li>
-</ol>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
@@ -104,17 +41,5 @@
         <link href="https://Pluto-blog.github.io/post/about/">
         </link>
         <updated>2020-03-15T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的个人博客！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>本站是Pluto的个人博客，记录生活</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>网名Pluto，北京市初中生</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>数码产品、摄影、视频图片后期</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p><a href="mailto:pluto@youdream.top">pluto@youdream.top</a></p>
-]]></content>
     </entry>
 </feed>
